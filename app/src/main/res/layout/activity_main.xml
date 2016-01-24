@@ -1,19 +1,181 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    tools:context="com.notica.notica.MainActivity">
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:screenOrientation="landscape"
+    tools:context="com.notica.myapplication.MainActivity"
+    android:background="@drawable/paper">
 
-    <android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Hello World!" />-->
+
+    <TextView
+        android:id="@+id/treble"
+        android:layout_width="640dp"
+        android:layout_height="240dp"
+        android:background="@drawable/trebleclef"/>
+
+    <TextView
+        android:id="@+id/note"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/quarternote"
+        android:layout_alignParentTop="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:text="A"
+        android:id="@+id/buttonA"
+        android:background="@android:color/transparent"
+        android:textSize="30dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/buttonB"
+        android:layout_toStartOf="@+id/buttonB" />
 
-    </android.support.design.widget.AppBarLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B"
+        android:id="@+id/buttonB"
+        android:background="@android:color/transparent"
+        android:textSize="30dp"
+        android:layout_alignTop="@+id/buttonA"
+        android:layout_toLeftOf="@+id/buttonC"
+        android:layout_toStartOf="@+id/buttonC" />
 
-    <include layout="@layout/content_main" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C"
+        android:id="@+id/buttonC"
+        android:background="@android:color/transparent"
+        android:textSize="30dp"
+        android:layout_above="@+id/buttonF"
+        android:layout_toLeftOf="@+id/buttonD"
+        android:layout_toStartOf="@+id/buttonD" />
 
-</android.support.design.widget.CoordinatorLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="D"
+        android:id="@+id/buttonD"
+        android:background="@android:color/transparent"
+        android:textSize="30dp"
+        android:layout_above="@+id/buttonG"
+        android:layout_alignRight="@+id/treble"
+        android:layout_alignEnd="@+id/treble" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E"
+        android:id="@+id/buttonE"
+        android:layout_alignBottom="@+id/buttonF"
+        android:layout_toStartOf="@+id/buttonB"
+        android:layout_toLeftOf="@+id/buttonB"
+        android:background="@android:color/transparent"
+        android:textSize="30dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="F"
+        android:id="@+id/buttonF"
+        android:background="@android:color/transparent"
+        android:textSize="30dp"
+        android:layout_below="@+id/buttonB"
+        android:layout_alignRight="@+id/buttonB"
+        android:layout_alignEnd="@+id/buttonB" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="G"
+        android:id="@+id/buttonG"
+        android:layout_below="@+id/buttonC"
+        android:layout_alignLeft="@+id/buttonC"
+        android:layout_alignStart="@+id/buttonC"
+        android:layout_alignRight="@+id/buttonC"
+        android:layout_alignEnd="@+id/buttonC"
+        android:background="@android:color/transparent"
+        android:textSize="30dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\?"
+        android:id="@+id/buttonidk"
+        android:layout_below="@+id/buttonD"
+        android:layout_alignLeft="@+id/buttonD"
+        android:layout_alignStart="@+id/buttonD"
+        android:layout_alignRight="@+id/buttonD"
+        android:layout_alignEnd="@+id/buttonD"
+        android:background="@android:color/transparent"
+        android:textSize="30dp"/>
+
+    <ImageView
+        android:id="@+id/checknote"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/checknote"
+        android:layout_toEndOf="@+id/checknote" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_toEndOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_alignRight="@+id/buttonsound"
+        android:layout_alignEnd="@+id/buttonsound" />
+
+    <ImageView
+        android:id="@+id/checkanswer1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"/>
+    <ImageView
+        android:id="@+id/checkanswer2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"/>
+    <ImageView
+        android:id="@+id/checkanswer3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonsound"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>
