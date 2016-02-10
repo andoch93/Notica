@@ -6,3 +6,4 @@ Description: A fun and easy way to familiarize yourself with basic notes on a mu
 
 Screenshots:
 
+![alt tag](https://raw.githubusercontent.com/andoch93/Notica/master/Screenshots/notica1.png)![alt tag](https://raw.githubusercontent.com/andoch93/Notica/master/Screenshots/notica2.png)![alt tag](https://raw.githubusercontent.com/andoch93/Notica/master/Screenshots/notica3.png)
